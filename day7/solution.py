@@ -51,7 +51,6 @@ def solve_part1(directories):
 def solve_part2(directories):
     directories.sort(key=lambda dir:dir[1])
     amount_needed = 30000000 - (70000000 - directories[-1][1])
-    print(amount_needed)
     for dir in directories:
         if dir[1] >= amount_needed:
             return dir[1]
